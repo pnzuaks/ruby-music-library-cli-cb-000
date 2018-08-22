@@ -4,12 +4,12 @@ require "pry-nav"
 class Song
   @@all = []
   
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :genre
   
-  def initialize(name, artist = false)
+  def initialize(name, artist = false, genre = false)
     set_artist(artist)
     @name = name 
-    save()
+    
   end
   
   def set_artist(value)
@@ -21,11 +21,18 @@ class Song
       @artist.add_song(self)
   end
   
+  def genre=()
+    
+  end
 
   def self.create(song)
     new_song = Song.new(song)
     new_song.save()
     return new_song
+  end
+  
+  def genre()
+    self.genre
   end
   
   def save()
