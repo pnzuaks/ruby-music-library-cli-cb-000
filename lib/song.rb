@@ -7,11 +7,11 @@ class Song
   attr_accessor :name, :artist
   
   def initialize(name, artist = false)
-    set_artist(artist)
+    artist=(artist)
     @name = name 
   end
   
-  def set_artist(value)
+  def artist=(value)
     if !value
       return
     end
