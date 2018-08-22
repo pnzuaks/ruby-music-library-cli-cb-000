@@ -12,17 +12,15 @@ class Song
   end
   
   def set_artist(value)
-    if value != false
+    if !value
+      return
+    end
+
       @artist = value
       @artist.add_song(self)
-    end
-   
   end
   
-  # if !value
-  #     return
-  #   end
-    
+
   def self.create(song)
     new_song = Song.new(song)
     new_song.save()
