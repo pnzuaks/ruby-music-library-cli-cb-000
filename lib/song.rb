@@ -9,7 +9,6 @@ class Song
   def initialize(name, artist = false)
     set_artist(artist)
     @name = name 
-    # @artist = artist
   end
   
   def set_artist(value)
