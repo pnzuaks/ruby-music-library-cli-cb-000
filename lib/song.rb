@@ -27,7 +27,7 @@ class Song
     end
     
     @genre = value
-    
+    @genre.add_song(self)
   end
 
   def self.create(song)
