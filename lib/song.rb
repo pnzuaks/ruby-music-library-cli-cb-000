@@ -13,7 +13,7 @@ class Song
   end
   
   def set_artist(value)
-    if value == false
+    if !value
       return
     end
 
