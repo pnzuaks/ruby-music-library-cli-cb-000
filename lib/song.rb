@@ -21,7 +21,12 @@ class Song
       @artist.add_song(self)
   end
   
-  def genre=()
+  def genre=(value)
+    if !value
+      return
+    end
+    
+    @genre = value
     
   end
 
