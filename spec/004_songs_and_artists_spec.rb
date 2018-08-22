@@ -43,7 +43,7 @@ describe "Associations — Song and Artist:" do
       end
     end
 
-    describe "#artist=" do
+    describe "#set_artist" do
       it "assigns an artist to the song (song belongs to artist)" do
         song.artist = artist
 
