@@ -36,9 +36,9 @@ class Song
     return new_song
   end
   
-  def genre()
-    self.genre
-  end
+  # def genre()
+  #   self.genre
+  # end
   
   def save()
     @@all << self
