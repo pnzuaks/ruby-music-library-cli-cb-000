@@ -22,9 +22,7 @@ class Artist
       song.artist = self
     end
     
-    if !@songs.include?(song)
-    @songs << song
-    end
+    artist.songs << self unless artist.songs.include?(self)
   end
   
   def songs()
