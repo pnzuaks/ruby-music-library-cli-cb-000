@@ -16,7 +16,7 @@ class Song
     if !value
       return
     end
-    binding.pry
+
       @artist = value
       @artist.add_song(self)
   end
