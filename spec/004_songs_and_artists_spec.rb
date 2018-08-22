@@ -1,4 +1,6 @@
 require "spec_helper"
+require "pry"
+require "pry-nav"
 
 describe "Associations — Song and Artist:" do
   let(:song) { Song.new("In the Aeroplane Over the Sea") }
