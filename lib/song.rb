@@ -17,7 +17,7 @@ class Song
       return
     end
     @artist = value
-    value.add_song(self)
+    @artist.add_song(self)
   end
   
   def self.create(song)
