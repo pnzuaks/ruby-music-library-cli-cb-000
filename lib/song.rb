@@ -9,6 +9,7 @@ class Song
   def initialize(name, artist = false)
     artist=(artist)
     @name = name 
+    save()
   end
   
   def artist=(value)
